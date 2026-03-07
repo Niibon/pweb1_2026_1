@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/action_page.html">
+        <fieldset>
+        <legend>Formulário Matrícula de Curso</legend>
+            <br>
+            <form>
+                <label for=“pnome">Primeiro nome:</label><br>
+                <input type="text" id="pnome" name="pnome"><br>
+                <label for=“unome">Último nome:</label><br>
+                <input type="text" id="unome" name="unome">
+            </form>
+
+            <form>     
+                <h3>Curso:</h3>
+                <input type="radio" id="TI" name="curso" value="TecnicoemInformatica">
+                <label for="TecnicoemInformatica">Tecnico em Informatica</label><br>
+                <input type="radio" id="Graduaco_analiseedesenvolvimentodesistemas" name="curso" value="GraduaçãoAnaliseeDesenvolvimentodeSistemas">
+                <label for="GraduaçãoAnaliseeDesenvolvimentodeSistemas">Graduação - Analise e Desenvolvimento de Sistemas</label><br>
+                <input type="radio" id="Profissionalizante_programacaoweb" name="curso" value="ProfissionalizanteProgramaçãoWEB">
+                <label for="ProfissionalizanteProgramaçãoWEB">Profissionalizante - Programação WEB</label><br>
+            </form>
+               
+            <form>
+                <h3>Linguagens de programação da sua preferência:</h3>
+                <input type="checkbox" id="php" name="linguagemfav1" value="PHP">
+                <label for="linguagemfav1"> PHP</label><br>
+                <input type="checkbox" id="java" name="linguagemfav2" value="JAVA">
+                <label for="linguagemfav2"> Java</label><br>
+                <input type="checkbox" id="python" name="linguagemfav3" value="PYTHON">
+                <label for="linguagemfav3"> Python</label>
+            </form>
+            
+            <br>
+            <h3>Escolha um turno: </h3>
+            <label for="turno"></label>
+            <select name="turno" id="turno">
+                <option value="manha">Manhã</option>
+                <option value=tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <h3>Escolha uma unidade mais próxima a você:</h3>
+            <label for="browser"></label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Chapecó">
+                <option value="Canoinhas">
+                <option value="Minha casa">
+                <option value="Juju do pix">
+                <option value="Floripa">
+            </datalist>
+            <br>
+            <br>
+            <button>Enviar</button>
+        </fieldset>
+</form>
+</body>
+</html>
