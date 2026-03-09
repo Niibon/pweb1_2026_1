@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body style="background-color: blue;">
+    <h1>Hello, world!</h1>
+
+    <section>
+                <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section style="width: 350px;">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://preview.redd.it/art-of-sonic-the-hedgehog-i-used-the-2nd-pic-as-a-reference-v0-upeeuzohwjgc1.png?width=600&format=png&auto=webp&s=9e2584b2fc6c70af6b1a95b28ea22aa67a46e564" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/9/91/Resident_Evil_4_-_North-american_cover.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+    <section>
+        <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
