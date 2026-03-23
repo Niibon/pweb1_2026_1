@@ -6,12 +6,28 @@
     <title>Site Super Choque</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../site_super_choque/css/style.css"/>
+    <script src="../site_super_choque/js/menu.js"></script>    
 </head>
   <body>
 
     <!-- Menu de Navegação -->
+
+    <div id="menu-lateral" class="menu-lateral">
+        <ul class="menu-itens">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#personagem">Personagem</a></li>
+            <li><a href="#curiosidade">Curiosidades</a></li>
+            <li><a href="#poderes">Poderes</a></li>
+        </ul>
+
+    </div>
+
     <nav class="navbar navbar-dark bg-primary fixed-top">
         <div class="container">
+            <button class="btn-menu" onclick="showMenu()">
+                <img id="img-menu" src="img/icon-hamburger-menu.png" width="28" height="28" alt="menu"/>
+            </button>
             <a class="navbar-brand mx-auto" href="#">
                 <img src="../site_super_choque/img/icone_tela_principal.png" 
                 width="40" 
@@ -29,7 +45,7 @@
             <img class="hero-image rounded-circle mb-4" src="../site_super_choque/img/icone_tela_principal.png" alt="Super Choque">
             <h1 class="display-4 fw-bold">Super Choque</h1>
             <p class="lead" href="#" class="btn btn-warning btn-lg">O herói do Eletromagnetismo</p>
-            <a href="#" class="btn btn-warning btn-lg">Saiba mais</a>
+            <a href="#historia" class="btn btn-warning btn-lg">Saiba mais</a>
         </div>
     </header>
 
@@ -92,7 +108,7 @@
 
     <!-- Curiosidade -->
 
-        <section id="Curiosidade" class="py-5">
+        <section id="curiosidade" class="py-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
@@ -119,8 +135,54 @@
 
     <!-- Super Poder-->
 
-            
-            </main>
+            <section id="poderes" class="bg-dark text-white py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="text-primary">Super Poderes</h2>
+                            <div class="row">
+                                <p>Os poderes se baseiam na eletricidade e eletromagnetismo:</p>
+                                <div class="col-6">
+                                        <ul>
+                                            <li>Eletromagnetismo</li>
+                                            <li>Campos magnéticos</li>
+                                            <li>Controle elétrico</li>
+                                            <li>Levitação de metais</li>
+                                            <li>Ondas de rádio</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                    <ul>
+                                        <li>Raios elétricos</li>
+                                        <li>Bolas de energia</li>
+                                        <li>Magnetização</li>
+                                        <li>Energia pura</li>
+                                        <li>Intelecto genial</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            
+                            <p class="text-white">
+                                <small>Fonte: NerdBox</small>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid rounded"
+                            src="../site_super_choque/img/super_poder.jpeg" alt="Super Poderes">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-primary text-white text-center py-3">
+            <div class="container">
+                <p class="mb-0">
+                    Projeto Desenvolvimento Web 1 - Site Super Choque &copy; 2026
+                </p>
+            </div>
+
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
