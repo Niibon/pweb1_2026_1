@@ -34,7 +34,7 @@
 
         //vetores com string
 
-        $nomes = ["Bruna", "Maria", "Emily", "Yasmim", "Vitória", "Luiza"];
+        $nomes = ["Arthur", "Bruna", "Maria", "Emily", "Yasmim", "Vitória", "Luiza"];
 
         foreach ($nomes as $item) {
             echo $item . "<br>";
@@ -44,6 +44,22 @@
         $carro = ['modelo' => "Mustang", 'cor' => "Branco", 'ano' => 2026];
 
         echo $carro['modelo'] . " - " . $carro['cor'];
+
+        //MATRIZ
+        echo "<br>";
+        $carros = [
+            ['modelo' => "Mustang", 'cor' => "Branco", 'ano' => 2026],
+            ['modelo' => "Fusca", 'cor' => "Azul", 'ano' => 1976],
+            ['modelo' => "Brasília", 'cor' => "Amarela", 'ano' => 1969],
+        ];
+
+        //echo $carros[0]['modelo'] . " - " . $carros[0]['cor'];
+
+        foreach ($carros as $indice => $carro1){
+            echo $indice + 1;
+            echo "Modelo: " . $carro1['modelo'] . ' Ano:' . $carro1['ano'];
+            echo "<br>";
+        }
     ?>
 
     <p> Meu Site <?=  $carro=['modelo'] . " -Ano " . $carro['ano'] ?> </p>
