@@ -1,12 +1,13 @@
 <?php
 
-class db {
+class db
+{
 
     private $host     = 'localhost';
     private $user     = 'root';
     private $password = '';
     private $port     = '3306';
-    private $dbname   = 'db_pweb1_202x_x';
+    private $dbname   = 'db_pweb1_2026_1';
     private $table_name;
     private $conn; // conexão fica guardada para reutilizar
 
@@ -30,6 +31,40 @@ class db {
             );
         } catch (PDOException $e) {
             die('Erro na conexão: ' . $e->getMessage());
+        }
+    }
+
+    //SELECT * FROM tabela
+    public function(){
+        $sql = "SELECT * FROM $this->table_name";
+        $st = $this->conn->prepare($sql);
+        $st->execute();
+
+        return $st->fetchAll(PDO::FETCH_CLASS);
+    }
+    //INSERT INTO `db_pweb1_2026_1`.`aluno` (`nome`, `email`) VALUES ('Yasmim', 'yasmim@aluno.vsr07aluno.ifsc.edu.br');
+
+    public function store($dados)
+    {
+        $campos = "";
+        $marcadores = "";
+        $vetorData = [];
+        $sep = "";
+
+        foreach ($dados as $campo => $valor) {
+            $campos .= $sep . $campo;
+            $marcadores .= $sep . "?";
+            $vetorData[] = $valor;
+            $sep = ",";
+        }
+        $sql = "INSERT INTO $this->table_name ($campos) VALUES ($marcadores)";
+
+
+        try {
+            $st = $this->conn->prepare($sql);
+            $st->execute($vetorData);
+        } catch (PDOException $e) {
+             throw new Exception("Erro ao inserir", $e->getMessage());
         }
     }
 }
